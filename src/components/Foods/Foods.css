@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px) {
+	.food-btns {
+		position: absolute;
+		top: 565px;
+		left: 46px;
+	}
+
+	.food-btns {
+		display: flex;
+		align-items: center;
+		overflow: scroll;
+		gap: 8px;
+	}
+
+	.food-btn {
+		border-radius: 16px;
+
+		width: 106px;
+		height: 30px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		border: none;
+		background: rgba(68, 68, 68, 0.1);
+		color: #747474;
+	}
+
+	.food-btn-active {
+		border-radius: 16px;
+
+		width: 106px;
+		height: 30px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		border: none;
+		background: #ff00c7;
+		color: #fff;
+	}
+
+	.food-details {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 330px;
+		top: 605px;
+		left: 52px;
+	}
+
+	.food-detail {
+		display: flex;
+
+		width: 327px;
+		height: 70px;
+		background: #ffffff;
+		box-shadow: 0px 12px 24px rgba(68, 68, 68, 0.1);
+		border-radius: 12px;
+	}
+
+	.left {
+		display: flex;
+	}
+
+	.left-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 12px;
+	}
+
+	.food-price {
+		margin-left: 6px;
+		color: #54a5da;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 23px;
+		/* identical to box height, or 164% */
+
+		letter-spacing: 0.5px;
+	}
+}
