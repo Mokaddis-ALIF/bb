@@ -1,11 +1,9 @@
 @media only screen and (max-width: 600px) {
-	.info-header {
-		position: absolute;
-		width: 233px;
-		height: 19px;
-		left: 46px;
-		top: 414px;
-
+	.info2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.info2-header {
 		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 400;
@@ -16,15 +14,9 @@
 		letter-spacing: 0.5px;
 
 		color: #000000;
+		margin-bottom: 6px;
 	}
-
-	.info-header-second {
-		position: absolute;
-		width: 133px;
-		height: 19px;
-		left: 46px;
-		top: 444px;
-
+	.info2-header-second {
 		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 400;
@@ -35,16 +27,61 @@
 		letter-spacing: 0.5px;
 
 		color: rgba(0, 0, 0, 0.5);
+		margin-bottom: 6px;
 	}
 
-	/* .star-icon {
+	.star-icon {
 		display: flex;
-		position: absolute;
+
 		width: 16px;
 		height: 16px;
-		left: 46px;
-		top: 465px;
-	} */
+		margin-bottom: 24px;
+	}
+
+	.second-info2 {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.second-header {
+		width: 223px;
+		height: 22px;
+
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+
+		letter-spacing: 0.5px;
+
+		color: #333333;
+		margin-left: 15px;
+	}
+
+	.second-header-text {
+		display: flex;
+
+		height: 20px;
+
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+
+		letter-spacing: 0.5px;
+
+		color: #54a5da;
+		margin-left: 15px;
+	}
+
+	.right-div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
 	input[type='radio'] {
 		display: none;
@@ -56,53 +93,4 @@
 		font-size: 18px;
 		margin-right: 2px;
 	}
-
-	/* .second-header {
-		position: absolute;
-		width: 223px;
-		height: 22px;
-		left: 49px;
-		top: 500px;
-
-		font-family: 'Poppins';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 22px;
-		
-
-		letter-spacing: 0.5px;
-
-		
-
-		color: #333333;
-	} */
-
-	/* .second-header-text {
-		display: flex;
-		position: absolute;
-		
-		height: 20px;
-		left: 49px;
-		top: 520px;
-
-		font-family: 'Poppins';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 12px;
-		line-height: 20px;
-		
-
-		letter-spacing: 0.5px;
-
-		
-
-		color: #54a5da;
-	} */
-
-	/* .right-div {
-		position: absolute;
-		right: 49px;
-		top: 505px;
-	} */
 }

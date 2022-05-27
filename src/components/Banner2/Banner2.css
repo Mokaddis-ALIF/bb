@@ -1,0 +1,56 @@
+@media only screen and (max-width: 600px) {
+	.banner2 {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		height: 420px;
+	}
+
+	.banner2-img {
+		position: relative;
+		width: 327px;
+		height: 327px;
+		top: 70px;
+	}
+
+	.header__center {
+		position: absolute;
+		display: flex;
+		height: 54px;
+		width: 290px;
+
+		top: 85px;
+		padding: 10px;
+		background: #ffffff;
+		border-radius: 30px;
+		align-items: center;
+		max-width: fit-content;
+	}
+
+	.header__center > input {
+		border: none;
+		padding: 10px;
+		outline-width: 0;
+		width: 250px;
+		padding: 10px;
+	}
+
+	.gps-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fa5d5d;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		box-shadow: 0px 8px 24px rgba(255, 113, 33, 0.4);
+		border-radius: 27px;
+	}
+
+	::placeholder {
+		font-family: 'Heebo';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+	}
+}

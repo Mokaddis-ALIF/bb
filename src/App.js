@@ -4,6 +4,9 @@ import AppHeader from './components/Header';
 import { Layout } from 'antd';
 import Info from './components/Info/Info';
 import Foods from './components/Foods/Foods';
+import Banner2 from './components/Banner2/Banner2';
+import Info2 from './components/Info2/Info2';
+import Foods2 from './components/Foods2/Foods2';
 
 const { Header, Content } = Layout;
 
@@ -15,9 +18,9 @@ function App() {
 			</Header>
 
 			<Content>
-				<Banner />
-				<Info />
-				<Foods />
+				<Banner2 />
+				<Info2 />
+				<Foods2 />
 			</Content>
 		</Layout>
 	);
