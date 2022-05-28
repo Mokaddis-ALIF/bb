@@ -21,7 +21,10 @@ const Food2Details = ({ food }) => {
 						<div className="left2-info">
 							<Text> {food.name}</Text>
 							<div>
-								<Text delete>$ {food.discountPrice}</Text>
+								<Text delete>
+									{' '}
+									{food.discountPrice === '' ? '' : `$ ${food.discountPrice}`}
+								</Text>
 								<Text className="food-price">$ {food.price}</Text>
 							</div>
 						</div>
