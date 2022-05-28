@@ -3,12 +3,11 @@ import './Foods2.css';
 import { Button } from 'antd';
 import { Col, Row } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
-import { HeartOutlined } from '@ant-design/icons';
-import { HeartFilled } from '@ant-design/icons';
+
 import { Image } from 'antd';
-import ice from '../../assets/ice.png';
 import { Space, Typography } from 'antd';
-const { Text, Link } = Typography;
+import Food2Details from './Food2Details';
+const { Text } = Typography;
 
 const foods = [
 	{
@@ -113,14 +112,9 @@ const names = ['Icecream', 'Snacks', 'Coffee', 'Sweet Cake'];
 
 const Foods2 = () => {
 	const [menuTab, setMenuTab] = useState(names[0]);
-	const [fav, setFav] = useState(false);
 
 	const handleMenuTabs = (type) => {
 		setMenuTab(type);
-	};
-
-	const handleFav = () => {
-		setFav((prev) => !prev);
 	};
 
 	return (
@@ -140,42 +134,8 @@ const Foods2 = () => {
 			<Row className="food2-details">
 				{foods
 					.filter((item) => menuTab === item.type)
-					.map((food, i) => (
-						<Col key={i} className="food2-detail" span={20} offset={2}>
-							<Row>
-								<Col span={20} className="left2">
-									<Image src={food.src} />
-									<div className="left2-info">
-										<Text> {food.name}</Text>
-										<div>
-											<Text delete>$ {food.discountPrice}</Text>
-											<Text className="food-price">$ {food.price}</Text>
-										</div>
-									</div>
-								</Col>
-								<Col span={4} justify="center" align="middle">
-									{/* <div onClick={() => setFav((prev) => !prev)}>
-										{!fav && <HeartOutlined />}
-									</div>
-									<div
-										onClick={() => setFav((prev) => !prev)}
-										style={{ color: 'red' }}
-									>
-										{fav && <HeartFilled />}
-									</div> */}
-
-									{!fav ? (
-										<div onClick={handleFav}>
-											<HeartOutlined />
-										</div>
-									) : (
-										<div onClick={handleFav} style={{ color: 'red' }}>
-											<HeartFilled />
-										</div>
-									)}
-								</Col>
-							</Row>
-						</Col>
+					.map((food) => (
+						<Food2Details food={food} key={food.i} />
 					))}
 			</Row>
 		</div>
