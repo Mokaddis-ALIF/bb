@@ -47,7 +47,18 @@
 	.left2-info {
 		display: flex;
 		flex-direction: column;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 26px;
+		/* identical to box height, or 186% */
 
+		letter-spacing: 0.5px;
+
+		/* Black */
+
+		color: #333333;
 		margin-left: 12px;
 	}
 }

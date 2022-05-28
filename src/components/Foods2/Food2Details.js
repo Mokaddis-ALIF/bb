@@ -38,7 +38,10 @@ const Food2Details = ({ food }) => {
 									</div> */}
 
 						{!fav ? (
-							<div onClick={handleFav}>
+							<div
+								onClick={handleFav}
+								style={{ width: '14px', height: '12px' }}
+							>
 								<HeartOutlined />
 							</div>
 						) : (
