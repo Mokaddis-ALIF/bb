@@ -3,7 +3,7 @@ import { Col, Row } from 'antd';
 import { Image } from 'antd';
 import { HeartOutlined } from '@ant-design/icons';
 import { HeartFilled } from '@ant-design/icons';
-import { Space, Typography } from 'antd';
+import { Typography } from 'antd';
 const { Text } = Typography;
 
 const Food2Details = ({ food }) => {
